@@ -1,0 +1,14 @@
+
+<h3 class="p-1 text-center">POST</h3>
+<input class="boton" type="button" value="Mostrar Usuarios" (click)="ngOnInit()"/>
+<section *ngIf="mostrar == false" class="mt-4">
+
+    <section class="container text-center w-50">
+        <ul *ngFor="let item of listado">
+          <li>{{ item.title }}</li>
+
+        </ul>
+  </section>
+</section>
+  
+  
