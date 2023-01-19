@@ -1,0 +1,18 @@
+<section class="container mb-2 p-3 w-50">
+    <section class="card shadow-2-strong mb-4" style="border-radius: 1rem; border-color: crimson">
+      <section class="card-body p-4">
+        <h1 class="p-1 text-center">POST</h1>
+        <section class="text-center">
+          <input class="boton" type="button" value="Mostrar Post" (click)="ngOnInit()"/>
+        </section>
+        <section *ngIf="mostrar == false" class="mt-4">
+          <section>
+            <ul *ngFor="let item of listado">
+              <li>{{ item.title }}</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+  
